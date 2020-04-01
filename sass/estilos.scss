@@ -1,0 +1,89 @@
+/*--------------------------------------------------------------
+  Variables de estilos
+  -------------------------------------------------------------*/
+/*COLORES*/
+$primary: #F05F40;
+$secondary: #222222;
+
+/*FONDOS*/
+$encabezado: rgba(0,0,0,0.205);
+
+/*TEXTOS*/
+$menuEncabezado: rgb(235, 230, 230);
+
+/*--------------------------------------------------------------
+  Modificando Variables de Bootstrap
+  -------------------------------------------------------------*/
+$theme-colors: (
+    "primary":    $primary,
+    "secondary":  $secondary
+);
+/*--------------------------------------------------------------
+  Importando Bootstrap
+  -------------------------------------------------------------*/
+@import"../libs/bootstrap-4.4.1/scss/bootstrap";
+
+/*--------------------------------------------------------------
+  Estilos Generales
+  -------------------------------------------------------------*/
+html{
+  font-size: 15px;
+}
+
+
+.bienvenidos{
+  background: url("../images/fondo-bienvenidos.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.encabezado{
+  background: $encabezado;
+  .navbar-light .navbar-brand {
+    color: $menuEncabezado;
+    font-size: 1.2rem;
+  }
+
+  .icono::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0c9";
+    color: $menuEncabezado;
+    font-size: 2rem;
+  }
+
+  .icono-cerrar::before {
+    content: "\f00d";
+    font-size: 2rem;
+  }
+
+  .navbar-light .navbar-brand:hover,
+  .navbar-light .navbar-brand:focus {
+    color: darken($menuEncabezado, 20);
+  }
+
+  .navbar-light .navbar-toggler {
+    border-color: transparent;
+    font-size: 1.5rem;
+  }
+
+  .navbar-light .navbar-nav { 
+    .nav-link {
+    color: $menuEncabezado;
+    text-align: center;
+    margin: .2rem 0;
+    }
+    .nav-link:hover{
+      background-color: $primary;
+      color: lighten($menuEncabezado, 50%);
+      font-weight: bold;
+    }
+    .active a{
+      background-color: $primary;
+      color: lighten($menuEncabezado, 50%);
+      font-weight: bold;
+    } 
+  }  
+
+  
+}

@@ -9,6 +9,9 @@
   <!-- Font Awsome-->
   <link rel="stylesheet" href="libs/fontawesome-free-5.13.0/css/all.min.css">
 
+  <!-- Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
   <!--Carga de estilos css Personalizados-->
   <link rel="stylesheet" href="css/estilos.css">
 
@@ -17,9 +20,9 @@
 
 <body>
   <section class="bienvenidos">
-    <header class="encabezado">
-      <div class="container">
-        <nav id="menu-navegacion" class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <header class="encabezado">
+        <nav id="menu-navegacion" class="navbar navbar-expand-lg navbar-light fixed-top">
           <a class="navbar-brand text-uppercase" id="empresa" href="#">Aulaideal.com</a>
           <button id="btnMenu" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,12 +47,54 @@
               </li>
             </ul>
           </div>
-        </nav>
-      </div>
-    </header>
-  </section>
+        </nav><!--#menu-navegacion-->
 
-  <i class="fas fa-bars"></i>
+      </header>
+      
+      <div class="texto-bienvenido text-center text-white mt-10">
+        <p class="h4">Bienvenido a nuestro estudio</p>
+        <h1 class="text-uppercase font-weight-lighter mb-4 display-4">Encantados de conocerte</h1>
+        <a href="#" class="btn btn-primary btn-lg">Ponte en contacto</a>
+      </div><!--.texto-bienvenido-->
+
+    </div>
+    </section>
+
+    <section id="nosotros" class="bg-primary text-center text-white">
+      <div class="container-lg py-5">
+        <img src="images/nosotros.svg" alt="¿Quienes somos?" width="200" class="mb-5">
+        <h2 class="mb-3 text-uppercase font-weight-lighter">¿Quienes somos?</h2>
+        <p class="mb-6 font-weight-lighter">Ponemos a tu alcance un servicio adaptado a tus necesidades, desde una consultoría integral con supervisión
+          de todos y cada uno de los pasos que has de seguir para crear un negocio actual (comunicación, diseño
+          corporativo, tecnologías...) a productos adaptados a metodologías ágiles de creación de apps diseñadas por
+          nosotros y avaladas por nuestros años de experiencia.</p>
+        <a href="#" class="btn btn-light btn-lg text-uppercase px-5 py-3 mb-2">Mas información</a>
+      </div>
+    </section>
+
+    <section  id="servicios" class="text-center">
+      <div class="container-lg py-5">
+        <h2 class="text-uppercase mb-4 font-weight-lighter">Nuestros Servicios</h2>
+        <div class="row row-cols-1">
+          <div class="col mt-5">
+            <i class="fas fa-suitcase fa-8x mb-4"></i>
+            <h3 class="font-weight-bolder">Aplicaciones para la nube</h3>
+            <p class="h5">Para empresa que requiera ampliar sus plataformas de gestión</p>
+          </div>
+          <div class="col mt-5">
+            <i class="fas fa-bullhorn fa-8x mb-4"></i>
+            <h3 class="font-weight-bolder">Fábrica de software</h3>
+            <p class="h5">Servicios de mejora correctiva y evolutiva para sus aplicaciones</p>
+          </div>
+          <div class="col mt-5">
+            <i class="fas fa-check-square fa-8x mb-4"></i>
+            <h3 class="font-weight-bolder">Diseño personalizado</h3>
+            <p class="h5">Customiza hasta el último píxel de tu App. Infinitas Posibilidades.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

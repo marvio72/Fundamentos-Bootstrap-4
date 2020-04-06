@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*--------------------------------------------------------------
   Variables de estilos
   -------------------------------------------------------------*/
@@ -10371,10 +10372,36 @@ body {
 /*--------------------------------------------------------------
   Texto bienvenido
   -------------------------------------------------------------*/
+.texto-bienvenido {
+  margin-top: 10rem; }
+
 /*--------------------------------------------------------------
   Seccion Servicios
   -------------------------------------------------------------*/
 #servicios .fas {
   color: #F05F40; }
+
+/*--------------------------------------------------------------
+  Seccion proyectos
+  -------------------------------------------------------------*/
+#proyectos {
+  background: #424141; }
+  #proyectos a {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 1.5rem; }
+  #proyectos img {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease; }
+  #proyectos img:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5); }
+
+/*--------------------------------------------------------------
+  MODIFICACION DE PARAMETROS SEGUN EL TAMAÑO DE PANTALLA
+  -------------------------------------------------------------*/
+@media (min-width: 768px) {
+  .texto-bienvenido {
+    margin-top: 22rem; } }
 
 /*# sourceMappingURL=estilos.css.map */

@@ -7,6 +7,7 @@ $secondary: #222222;
 
 /*FONDOS*/
 $encabezado: rgba(0, 0, 0, 0.591);
+$proyectos: #424141;
 
 /*TEXTOS*/
 $menuEncabezado: rgb(235, 230, 230);
@@ -118,9 +119,8 @@ body{
 /*--------------------------------------------------------------
   Texto bienvenido
   -------------------------------------------------------------*/
-
 .texto-bienvenido{
-  // padding-top: 4rem;
+  margin-top: 10rem;
 }
 
 /*--------------------------------------------------------------
@@ -131,3 +131,30 @@ body{
     color: $primary;
   }
 }
+
+/*--------------------------------------------------------------
+  Seccion proyectos
+  -------------------------------------------------------------*/
+#proyectos{
+  background: $proyectos;
+  a{
+    display: block;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+  }
+  img{
+    transition: all .3s ease;
+  }
+  img:hover{
+    transform: scale(1.5);
+  }
+}
+
+/*--------------------------------------------------------------
+  MODIFICACION DE PARAMETROS SEGUN EL TAMAÑO DE PANTALLA
+  -------------------------------------------------------------*/
+@media (min-width: 768px){ 
+  .texto-bienvenido{
+    margin-top: 22rem;
+  } 
+ }

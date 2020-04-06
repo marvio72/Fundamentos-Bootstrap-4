@@ -20,32 +20,34 @@
 
 <body>
   <section class="bienvenidos">
-    <div class="container">
+    <div class="container-lg">
       <header class="encabezado">
-        <nav id="menu-navegacion" class="navbar navbar-expand-lg navbar-light fixed-top">
-          <a class="navbar-brand text-uppercase" id="empresa" href="#">Aulaideal.com</a>
-          <button id="btnMenu" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="icono"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Portafolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
-              </li>
-            </ul>
+        <nav id="menu-navegacion" class="navbar navbar-expand-md navbar-light fixed-top">
+          <div class="container">
+            <a class="navbar-brand text-uppercase" id="empresa" href="#">Aulaideal.com</a>
+            <button id="btnMenu" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="icono"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav font-weight-lighter">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#nosotros">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#servicios">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#proyectos">Portafolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacto</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav><!--#menu-navegacion-->
 
@@ -68,7 +70,8 @@
           de todos y cada uno de los pasos que has de seguir para crear un negocio actual (comunicación, diseño
           corporativo, tecnologías...) a productos adaptados a metodologías ágiles de creación de apps diseñadas por
           nosotros y avaladas por nuestros años de experiencia.</p>
-        <a href="#" class="btn btn-light btn-lg text-uppercase px-5 py-3 mb-2">Mas información</a>
+        <a href="#" class="btn btn-light btn-lg text-uppercase px-5 py-3 mb-2" data-toggle="modal"
+          data-target="#quienes-somos">Mas información</a>
       </div>
     </section>
 
@@ -140,6 +143,36 @@
         </div>
       </footer>
     </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="quienes-somos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content px-4">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">¿Quienes somos?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row row-cols-1 row-cols-md-2 justify-content-center align-items-center">
+              <div class="col col-md-7">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime vel perferendis aliquid doloremque nesciunt, sed dignissimos blanditiis ex quisquam inventore ipsam, maiores illo! Repellat atque, minus ducimus delectus officia eos dolor quasi neque ea deserunt, maiores earum enim autem nesciunt adipisci, optio debitis obcaecati quia. Dolore vel explicabo voluptatem provident.</p>
+              </div>  
+              <div class="col col-md-5 text-center" id="compu">
+                <div class="circulo">
+                  <i class="fas fa-laptop fa-5x text-white"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
